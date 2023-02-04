@@ -9,10 +9,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-        child: Text(
-      'Hello Pickly ! ',
-      textDirection: TextDirection.ltr,
-    ));
+    return MaterialApp(
+      title: 'Welcome to Pickly',
+      theme: ThemeData(
+        primarySwatch: Colors.lightGreen,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome to Pickly'),
+        ),
+        body: Center(
+          child: Text('Hello Pickly'),
+        ),
+      ),
+    );
   }
 }
