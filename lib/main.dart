@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Welcome to Pickly'),
+          title: const Text('Welcome to Pickly'),
         ),
-        body: Center(
-          child: Text('Hello Pickly'),
+        body: const Center(
+          child: Text('Hello Pickly !!!!!'),
         ),
       ),
     );
